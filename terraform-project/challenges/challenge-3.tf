@@ -18,7 +18,7 @@ variable "subnet_cidr_range" {
 }
 
 resource "aws_subnet" "public_subnet" {
-  vpc_id = var.aws_vpc.challenge-3-vpc.id
+  vpc_id = aws_vpc.challenge-3-vpc.id
   cidr_block = var.subnet_cidr_range
   map_public_ip_on_launch = true
 }
