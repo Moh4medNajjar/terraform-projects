@@ -1,5 +1,5 @@
 #####Variables############
-# variabels.ts
+# variables.ts
 variable "Environment" {
   type        = string
   description = "The environment tag for resources"
